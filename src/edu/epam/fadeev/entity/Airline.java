@@ -2,6 +2,8 @@ package edu.epam.fadeev.entity;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.EnumSet;
 import java.util.List;
 
 public class Airline {
@@ -9,7 +11,7 @@ public class Airline {
     private int flightNumber;
     private PlaneType planeType;
     private LocalTime departure;
-    private List<Weekday> weekdays;
+    private EnumSet<Weekday> weekdays;
 
     public Airline(String destination, int flightNumber, PlaneType planeType,
                    LocalTime departure, Weekday[] weekdays) {
@@ -17,7 +19,7 @@ public class Airline {
         this.flightNumber = flightNumber;
         this.planeType = planeType;
         this.departure = departure;
-        this.weekdays = List.of(weekdays);
+        this.weekdays = EnumSet.copyOf(Arrays.asList(weekdays));
     }
 
     public void setDestination(String destination) {
