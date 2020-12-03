@@ -1,7 +1,7 @@
 package edu.epam.fadeev.entity;
 
 import java.util.List;
-import java.util.Objects;
+import java.util.Objects
 
 public class AirportSchedule {
     private List<Airline> schedule;

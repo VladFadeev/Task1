@@ -1,7 +1,6 @@
 package edu.epam.fadeev.entity;
 
 import java.time.LocalTime;
-import java.util.*;
 
 public class Airline {
     private String destination;

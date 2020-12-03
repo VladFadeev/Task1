@@ -6,7 +6,7 @@ import edu.epam.fadeev.entity.Weekday;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List
 
 public class AirportScheduleService {
     public List<Airline> findAirlinesByDestination(AirportSchedule schedule, String destination) {
